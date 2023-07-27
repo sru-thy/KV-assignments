@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Employee App Admin</title>
+  </head>
+  <body>
+    <section>
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="kv logo.png" />
+        </div>
+        <div></div>
+        <ul class="side-nav">
+          <li class="list">
+            <a>
+              <div class="icon-li">
+                <img src="icon.svg" />
+              </div>
+              <span>Employee List</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="section2">
+        <div class="header">header</div>
+        <div class="feed">
+          <div class="heading">Create Employee</div>
+          <div class="form">
+            <div class="input-flex">
+              <div class="wr">
+                <label for="name">Employee Name</label>
+                <input type="text" id="name" placeholder="Employee Name" />
+              </div>
+              <div class="wr">
+                <label for="id">Employee ID</label>
+                <input type="text" id="ID" placeholder="Employee ID" />
+              </div>
+              <div class="wr">
+                <label for="id">Joining Date</label>
+                <input
+                  type="text"
+                  name="date"
+                  placeholder="Joining Date"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+              <div class="wr">
+                <label for="role">Role</label>
+                <select id="role">
+                  <option value="" disabled selected>Choose Role</option>
+                </select>
+              </div>
+              <div class="wr">
+                <label for="status">Status</label>
+                <select id="status">
+                  <option value="" disabled selected>Status</option>
+                </select>
+              </div>
+              <div class="wr">
+                <label for="exp">Experience</label>
+                <input type="text" id="exp" placeholder="Experience" />
+              </div>
+              <div class="wr">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" />
+              </div>
+            </div>
+            <div class="end">
+              <input type="submit" value="Create" class="form-create" />
+              <input type="submit" value="Cancel" class="form-cancel" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
